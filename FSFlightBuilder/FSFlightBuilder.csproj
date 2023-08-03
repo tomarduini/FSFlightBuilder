@@ -1,0 +1,375 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>d:\deploy\FSFlightBuilder\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://www.arduiniwebdeveloper.com/fsflightbuilder/updates/</UpdateUrl>
+    <MinimumRequiredVersion>1.0.0.4</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AD86259A8244D7ACBF89142C8B45EEF0FB3EC2CE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FSFlightBuilder.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>D:\Development\AWD\AWD.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <FileVersion>3.0.0.0</FileVersion>
+    <Version>3.0.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="backup\**" />
+    <Compile Remove="Data - Copy\**" />
+    <Compile Remove="Data.bak\**" />
+    <Compile Remove="Data\Routes\**" />
+    <Compile Remove="Logs\**" />
+    <Compile Remove="net6.0-windows\**" />
+    <Compile Remove="net7.0-windows\**" />
+    <Compile Remove="Output\**" />
+    <EmbeddedResource Remove="backup\**" />
+    <EmbeddedResource Remove="Data - Copy\**" />
+    <EmbeddedResource Remove="Data.bak\**" />
+    <EmbeddedResource Remove="Data\Routes\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <EmbeddedResource Remove="net6.0-windows\**" />
+    <EmbeddedResource Remove="net7.0-windows\**" />
+    <EmbeddedResource Remove="Output\**" />
+    <None Remove="backup\**" />
+    <None Remove="Data - Copy\**" />
+    <None Remove="Data.bak\**" />
+    <None Remove="Data\Routes\**" />
+    <None Remove="Logs\**" />
+    <None Remove="net6.0-windows\**" />
+    <None Remove="net7.0-windows\**" />
+    <None Remove="Output\**" />
+    <Page Remove="backup\**" />
+    <Page Remove="Data - Copy\**" />
+    <Page Remove="Data.bak\**" />
+    <Page Remove="Data\Routes\**" />
+    <Page Remove="Logs\**" />
+    <Page Remove="net6.0-windows\**" />
+    <Page Remove="net7.0-windows\**" />
+    <Page Remove="Output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Content Include="Content\16.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bg_ttp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Completed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\RoundedBG.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Working.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Data\Templates\countries.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Templates\Country_locPak.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Templates\About.html" />
+    <EmbeddedResource Include="Data\Templates\AircraftSpeeds.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Templates\AirportInfo.htm" />
+    <EmbeddedResource Include="Data\Templates\FSFlightBuilderCategories.xml" />
+    <EmbeddedResource Include="Data\Templates\TemplateP3D.xml" />
+    <EmbeddedResource Include="Data\Templates\Template.xml" />
+    <EmbeddedResource Include="Data\Templates\Template.htm" />
+    <EmbeddedResource Include="Data\Templates\FSFlightBuilder.db" />
+    <Content Include="ReadMe.txt" />
+    <EmbeddedResource Include="Data\Templates\Template.fxml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Templates\Template.flt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.9" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="NLog" Version="5.2.2" />
+    <PackageReference Include="PDFtoImage" Version="2.3.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="7.0.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.DirectoryServices" Version="7.0.1" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.9" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autoupdater.NET.Official" Version="1.8.3" />
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="DotNetZip" Version="1.16.0" />
+    <PackageReference Include="LoadingIndicator.WinForms" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Bcl.Build" Version="1.0.21" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1901.177" />
+    <PackageReference Include="SQLitePCLRaw.core" Version="2.1.5" />
+    <PackageReference Include="UI.for.WinForms.Common" Version="2023.2.606" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="BGLImporter - Copy.cs" />
+    <Compile Remove="BGLImporter - Copy.Designer.cs" />
+    <Compile Remove="BGLImporterAsync.cs" />
+    <Compile Remove="BGLImporterAsync.Designer.cs" />
+    <Compile Remove="ChartChooser - Copy.cs" />
+    <Compile Remove="ChartChooser - Copy.Designer.cs" />
+    <Compile Remove="Components\Aircraft.cs" />
+    <Compile Remove="Components\Airport.cs" />
+    <Compile Remove="Components\AWDBGL2Xml.cs" />
+    <Compile Remove="Components\Comm.cs" />
+    <Compile Remove="Components\CustomWebClient.cs" />
+    <Compile Remove="Components\GhostScript.cs" />
+    <Compile Remove="Components\Helpers - Copy (2).cs" />
+    <Compile Remove="Components\Helpers - Copy.cs" />
+    <Compile Remove="Components\Navaid.cs" />
+    <Compile Remove="Components\Parking.cs" />
+    <Compile Remove="Components\Route.cs" />
+    <Compile Remove="Components\Runway.cs" />
+    <Compile Remove="Components\Waypoint.cs" />
+    <Compile Remove="Components\XplaneParser.cs" />
+    <Compile Remove="Data\Models\DbAirport.cs" />
+    <Compile Remove="Data\Models\DbAirway.cs" />
+    <Compile Remove="Data\Models\DbComm.cs" />
+    <Compile Remove="Data\Models\DbILS.cs" />
+    <Compile Remove="Data\Models\DbNdb.cs" />
+    <Compile Remove="Data\Models\DbParking.cs" />
+    <Compile Remove="Data\Models\DbRoute.cs" />
+    <Compile Remove="Data\Models\DbRunway.cs" />
+    <Compile Remove="Data\Models\DbRunwayEnd.cs" />
+    <Compile Remove="Data\Models\DbVor.cs" />
+    <Compile Remove="Data\Models\DbWaypoint.cs" />
+    <Compile Remove="Data\Models\Ndb.cs" />
+    <Compile Remove="Data\Models\NDRDbConn.cs" />
+    <Compile Remove="Data\Models\Vor.cs" />
+    <Compile Remove="DestinationChooser - Copy (2).cs" />
+    <Compile Remove="DestinationChooser - Copy.cs" />
+    <Compile Remove="DestinationChooser - Copy.Designer.cs" />
+    <Compile Remove="DestinationChooser.Designer - Copy.cs" />
+    <Compile Remove="Entities\AviationAPIResponse.cs" />
+    <Compile Remove="Form1.cs" />
+    <Compile Remove="Form1.Designer.cs" />
+    <Compile Remove="Form2.cs" />
+    <Compile Remove="Form2.Designer.cs" />
+    <Compile Remove="FSFlightBuilder.cs" />
+    <Compile Remove="FSFlightBuilder.Designer.cs" />
+    <Compile Remove="Main - Copy.cs" />
+    <Compile Remove="Main - Copy.Designer.cs" />
+    <Compile Remove="RadForm1.cs" />
+    <Compile Remove="RadForm1.Designer.cs" />
+    <Compile Remove="UserControl1.cs" />
+    <Compile Remove="UserControl1.Designer.cs" />
+    <Compile Remove="WaitWindow - Copy.cs" />
+    <Compile Remove="WaitWindow - Copy.Designer.cs" />
+    <Compile Remove="WaitWindow.cs" />
+    <Compile Remove="WaitWindow.Designer.cs" />
+    <Compile Remove="WaitWindowAsync.cs" />
+    <Compile Remove="WaitWindowAsync.Designer.cs" />
+    <EmbeddedResource Remove="BGLImporter - Copy.resx" />
+    <EmbeddedResource Remove="BGLImporterAsync.resx" />
+    <EmbeddedResource Remove="ChartChooser - Copy.resx" />
+    <EmbeddedResource Remove="DestinationChooser - Copy (2).resx" />
+    <EmbeddedResource Remove="DestinationChooser - Copy.resx" />
+    <EmbeddedResource Remove="Form1.resx" />
+    <EmbeddedResource Remove="Form2.resx" />
+    <EmbeddedResource Remove="Main - Copy.resx" />
+    <EmbeddedResource Remove="RadForm1.resx" />
+    <EmbeddedResource Remove="UserControl1.resx" />
+    <EmbeddedResource Remove="WaitWindow - Copy.resx" />
+    <EmbeddedResource Remove="WaitWindow.resx" />
+    <EmbeddedResource Remove="WaitWindowAsync.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".~lock.FS Flight Builder Manual.odt#" />
+    <None Remove="Data\countries.json" />
+    <None Remove="Data\Country_locPak.txt" />
+    <None Remove="Data\d-tpp_Metafile.xml" />
+    <None Remove="Data\dep.htm" />
+    <None Remove="Data\dest.htm" />
+    <None Remove="Data\fsflightbuilder.db" />
+    <None Remove="Data\Themes.txt" />
+    <None Remove="Data\Themes.txt.bak" />
+    <None Remove="dbo.Airport.sql" />
+    <None Remove="FS Flight Builder Manual Dec 18.docx" />
+    <None Remove="FS Flight Builder Manual.bak" />
+    <None Remove="FS Flight Builder Manual.docx" />
+    <None Remove="FS Flight Builder Manual.odt" />
+    <None Remove="FS Flight Builder Manual.pdf" />
+    <None Remove="FS Flight Builder Manual.pdf.old" />
+    <None Remove="FS Flight Builder Manual2.docx" />
+    <None Remove="FS Flight Builder Manual2.odt" />
+    <None Remove="FSFlightBuilder.bmp" />
+    <None Remove="FSFlightBuilder.db" />
+    <None Remove="FSFlightBuilder.ico" />
+    <None Remove="FSFlightBuilder.settings" />
+    <None Remove="FSFlightBuilder.zip" />
+    <None Remove="Installer.iss" />
+    <None Remove="Ionic.Zip.xml" />
+    <None Remove="NLog.config.bak" />
+    <None Remove="WaitWindow.cs.bak" />
+    <None Remove="WaitWindowEventArgs.cs.bak" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AWDControls">
+      <HintPath>AWDControls.dll</HintPath>
+    </Reference>
+    <Reference Include="FSFlightBuilder.Data">
+      <HintPath>FSFlightBuilder.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MsgBox">
+      <HintPath>..\..\..\AWD\AWDGames\FSFlightBuilder\FSFlightBuilder\bin\MsgBox.dll</HintPath>
+    </Reference>
+    <Reference Include="RTB_Tooltip">
+      <HintPath>RTB_Tooltip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\NavDataReader\config\logging.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\config\navdatareader.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\libgcc_s_seh-1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\libstdc++-6.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\libwinpthread-1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\navdatareader.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\Qt5Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\Qt5Sql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\sqldrivers\qsqlite.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\sqldrivers\qsqlodbc.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\sqldrivers\qsqlpsql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\NavDataReader\translations\qt_en.qm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\NavDataReader\" />
+    <Folder Include="Logger\" />
+  </ItemGroup>
+</Project>

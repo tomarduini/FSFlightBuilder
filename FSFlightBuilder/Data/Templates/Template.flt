@@ -1,0 +1,468 @@
+
+[Main]
+Title=!Title!
+Description=!Description!
+AppVersion=!AppVersion!
+FlightVersion=1
+
+[Options]
+Sound=True
+Pause=False
+Moonlight=True
+TextDisplayPage=0
+SlewDisplayPage=1
+AxisIndicator=Off
+Titles=False
+
+[Kneeboard]
+Visible=True
+Location=21, 376
+PageId=0
+Page0Scroll=0, 0
+Page1Scroll=0, 0
+Page2Scroll=0, 0
+Page3Scroll=0, 0
+Page4Scroll=0, 0
+Page5Scroll=0, 0
+Page6Scroll=0, 0
+RadioMsg0="!RadioMsg!"
+RadioMsgKind0=6
+
+[Atc_Menu]
+ScreenUniCoords=1944, 1219, 4303, 3706
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+ShowMessages=True
+
+[Panels]
+Panel.On=True
+HUD.On=False
+
+[Window.1]
+Order=0
+Active=True
+Undocked=False
+Maximized=True
+ScreenUniCoords=0, 0, 8192, 6144
+UndocCoords=0, 0, 0, 0
+CurrentCamera={C95EAB58-9E4A-4E2A-A34C-D8D9D948F078}
+
+[Camera.1.1]
+Guid={B1386D92-4782-4682-A137-738E25D1BAB5}
+Zoom=1
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.2]
+Guid={C95EAB58-9E4A-4E2A-A34C-D8D9D948F078}
+Zoom=0.69999998807907104
+Translation=0, 0, 0
+Rotation=12, 0, 0
+
+[Camera.1.3]
+Guid={4D6E0979-AAC8-499F-AADB-F36877C4E8AA}
+Zoom=1
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.4]
+Guid={195EAB58-9E4A-4E2A-A34C-A8D9D948F078}
+Zoom=0.75
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.5]
+Guid={BCA3FDD1-FB83-4BBA-8407-4922A7F0D00C}
+Zoom=1
+Translation=0, 0, 0
+ChaseDirection=90
+ChaseDistance=28.041599273681641
+ChaseAltitude=0.91439998149871826
+
+[Camera.1.6]
+Guid={BCA3FDD1-FB83-4BBA-8407-4922A7F0D00D}
+Zoom=1
+Translation=0, 0, 0
+ChaseDirection=-135
+ChaseDistance=37.5
+ChaseAltitude=0.80000001192092896
+
+[Camera.1.7]
+Guid={6B79DD49-9B4A-439D-BF40-ACBF157B0BA0}
+Zoom=10
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.8]
+Guid={A2849229-938A-448F-8AC6-01EF2291C171}
+Zoom=80.300003051757813
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.9]
+Guid={60BC0819-BD04-4AF6-8954-8FC8AA3545FF}
+Zoom=8
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.10]
+Guid={AA8C80C0-9EE2-4284-A1C2-B20CD3F5F3D9}
+Zoom=8
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.11]
+Guid={607C4520-CA6F-4135-AE10-8BF28838068F}
+Zoom=1
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.12]
+Guid={67BF6C33-9E4B-4D7C-AE70-1B9E43AB2B4F}
+Zoom=0.75
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.13]
+Guid={C690EAFD-223A-42D0-99E0-681ADF93BB59}
+Zoom=0.5
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[Camera.1.14]
+Guid={99899CA9-8B9A-45BF-9F1A-42745A56EF00}
+Zoom=0.5
+
+Translation=0, 0, 0
+Rotation=0, 0, 0
+
+[EFIS]
+Active=False
+NavAid=VOR 1
+Type=Rectangles
+Density=Thin
+Range=Short
+Altitude=+000000.00
+Flags=0
+
+[ATC_AgentManager]
+NumberofAgents=0
+
+[ATC_Aircraft.0]
+ActiveFlightPlan=False
+RequestedFlightPlan=False
+AcState=ACSTATE_REQUEST_TAXI_CLEARANCE_OUT_VFR_ATIS
+NumberofWaypoints=0
+ClearanceFlags=80
+CtCur=CLEARANCE_NONE
+WaypointNext=0
+AltCleared=-1
+HdgAssigned=-1
+SquawkAssigned=-134802944
+LandingSequence=LANDING_NONE
+DepartureRequest=DEPARTURE_VFR_REQUEST_NONE
+ParkingRequest=PARKING_NAME_NONE
+ParkingTypeRequest=PARKING_TYPE_NONE
+PatternLeg=PATTERN_LEG_NONE
+ApproachIndex=-1
+ApproachTransitionIndex=-1
+ApproachRequestIndex=-1
+ApproachTransitionRequestIndex=-1
+RunwayIndex=-1
+RunwayRequestIndex=-1
+ParkingIndex=-1
+FlightFollowing=FLIGHT_FOLLOWING_NO
+AirspaceTransition=AIRSPACE_TRANSITION_NONE
+BVAirspaceTransition=BV_TYPE_NONE
+BVAirspaceTransitionReq=BV_TYPE_NONE
+TakeoffSequence=TAKEOFF_SEQUENCE_NONE
+LandingSequenceNumber=-1
+TaxiRouteCurrent=-1
+CruisingAltitude=-1
+RequestedCruisingAltitude=-1
+ExpectedAltitude=-1
+AircraftSignature=1,0
+
+[ATC_AircraftManager]
+NumberofAircraft=1
+
+[ATC_MessageSystem]
+FrequencyNodes=0
+
+[GPS_Engine]
+Filename=!FileName!
+position=!FlightPosition!
+Time=0
+TimeWP=0
+ArriveTime=0
+CountWP=!CountWP!
+NextWP=1
+PlaneStarted=False
+WpInfo0=
+CountFP=1
+FP0=00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
+[DateTimeSeason]
+Season=!Season!
+Year=!Year!
+Day=!Day!
+Hours=!Hours!
+Minutes=!Minutes!
+Seconds=!Seconds!
+
+[Panel.1]
+ScreenUniCoords=0, 0, 8192, 6144
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=0
+ViewsOn=1
+
+[Panel.2]
+ScreenUniCoords=7024, 4336, 1168, 1808
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=150
+ViewsOn=0
+
+[Panel.3]
+ScreenUniCoords=6528, 5112, 1664, 1032
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=50
+ViewsOn=0
+
+[Panel.4]
+ScreenUniCoords=0, 0, 0, 0
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=225
+ViewsOn=0
+
+[Panel.5]
+ScreenUniCoords=0, 0, 0, 0
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=20000
+ViewsOn=1
+
+[Panel.6]
+ScreenUniCoords=0, 0, 0, 0
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=22001
+ViewsOn=0
+
+[Panel.7]
+ScreenUniCoords=0, 0, 0, 0
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=22002
+ViewsOn=0
+
+[Panel.8]
+ScreenUniCoords=0, 0, 0, 0
+UndocCoords=0, 0, 0, 0
+Visible=False
+Undocked=False
+HiddenOn=False
+ID=22003
+ViewsOn=0
+
+[User Tip Window]
+Undocked=False
+ScreenUniCoords=500, 400, 7192, 650
+UndocCoords=0, 0, 0, 0
+
+[Sim.0]
+Sim=!Aircraft!
+
+[SimVars.0]
+Latitude=!ParkLat!
+Longitude=!ParkLon!
+Altitude=!ParkAlt!
+Pitch=0
+Bank=0
+Heading=!ParkHeading!
+PVelBodyAxis=0
+BVelBodyAxis=0
+HVelBodyAxis=0
+XVelBodyAxis=0
+YVelBodyAxis=0
+ZVelBodyAxis=0
+SimOnGround=True
+OnPlatformHeight=-9999999999
+
+[Avionics.0]
+Comm1Active=128.300
+Comm1Standby=128.250
+Comm2Active=127.800
+Comm2Standby=127.900
+Nav1Active=113.70
+Nav1Standby=117.20
+OBS1=340
+Nav2Active=110.60
+Nav2Standby=116.80
+OBS2=315
+Transponder=1200
+ADFActive=284
+ADF2Active=240
+DMESelected=1
+ComTransmit=1
+ComReceiveBoth=False
+AudioNav1Listen=False
+AudioNav2Listen=False
+AudioMarkerListen=False
+AudioDmeListen=False
+AudioAdfListen=False
+AudioAdf2Listen=False
+AvionicsSwitch=False
+
+[Slew.0]
+Active=False
+
+[Freeze.0]
+Location=False
+Altitude=False
+Attitude=False
+
+[Engine Parameters.1.0]
+ThrottleLeverPct=0
+PropellerLeverPct=0
+MixtureLeverPct=0
+Pct Engine RPM=0
+MaxReachedEngineRPM=0
+LeftMagneto=False
+RightMagneto=False
+GeneratorSwitch=False
+CowlFlapPct=0
+FuelPumpSwitch=False
+CarbHeat/DeiceSwitch=False
+
+[Fuel.0]
+TankSelector=All
+TankSelector1=All
+Center=98.961311340332031
+LeftMain=100
+RightMain=100
+LeftAux=100
+RightAux=100
+LeftTip=100
+RightTip=100
+Center 2=100
+Center 3=100
+External 1=100
+External 2=100
+
+[Systems.0]
+BatterySwitch=False
+StructuralDeiceSwitch=False
+PropDeiceSwitch=False
+Autobrakes=0
+StandbyVacuum=False
+PropSync=False
+AutoFeatherSwitch=False
+FlightDirector=False
+PanelLights=False
+LaunchBarSwitch=False
+LaunchBarState=0
+TailhookHandle=False
+TailhookState=0
+FoldingWingsHandle=False
+FoldingWingsState=0, 0
+
+[Gauges.0]
+KollsmanSetting=29.916912078857422
+
+[Switches.0]
+PitotHeat=False
+BeaconLights=False
+LandingLights=False
+LogoLights=False
+NavLights=False
+PanelLights=False
+RecognitionLights=False
+StrobeLights=False
+TaxiLights=False
+WingLights=False
+CabinLights=False
+
+[AutoPilot.0]
+MasterSwitch=False
+WingLeveler=False
+Nav1Lock=False
+HeadingLock=False
+HeadingValue=0
+AltitudeLock=False
+AltitudeValue=0
+AttitudeHold=False
+AirspeedHold=False
+AirspeedValue=0
+MachHold=False
+MachValue=0
+VerticalSpeedHold=False
+VerticalSpeedValue=0
+RPMHold=False
+RPMValue=0
+GlideslopeHold=False
+ApproachHold=False
+BackCourseHold=False
+YawDamper=False
+ToGa=False
+AutoThrottleArm=False
+GPSdrivesNAV1=False
+IsUsedForLesson=False
+
+[Payload.0]
+PayloadList=-1
+
+[Controls.0]
+SpoilersHandle=000.00
+FlapsHandle=000.00
+LeftFlap=000.00
+RightFlap=000.00
+GearsHandle=000.01
+Gear1=100.00
+Gear2=100.00
+Gear3=100.00
+YokeY=050.00
+YokeX=050.00
+Rudder=050.00
+LeftBrake=100.00
+RightBrake=100.00
+ParkingBrake=100.00
+ElevatorTrim=050.0
+RudderTrimPct=0
+AileronTrimPct=0
+
+[SimScheduler]
+SimSpeed=001.00
+SimTime=569.01687919113022
+
+[Weather]
+WeatherType=0
+ThemeName=weather\themes\fair.WTB
+ThemeTime=112
+
+[Flying Tip Window]
+Undocked=False
+ScreenUniCoords=500, 400, 7192, 650
+UndocCoords=0, 0, 0, 0
+
+[ResourcePath]
+Path=Missions\FS Flight Builder\
+[ObjectFile]
+File=!ObjectFile!

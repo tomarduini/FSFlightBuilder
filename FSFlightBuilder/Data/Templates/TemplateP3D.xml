@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SimBase.Document Type="MissionFile" version="1,0">
+  <Title></Title>
+  <WorldBase.Flight>
+    <!--General mission properties-->
+    <SimMissionUI.ScenarioMetadata>
+      <CategoryRef>{e4944728-7907-4252-8535-64c347909b72}</CategoryRef>
+      <Descr></Descr>
+      <ScenarioType>Mission</ScenarioType>
+      <SkillLevel>Beginner</SkillLevel>
+      <AbbreviatedMissionBrief></AbbreviatedMissionBrief>
+      <MissionBrief></MissionBrief>
+    </SimMissionUI.ScenarioMetadata>
+    <SimMission.RealismOverrides>
+      <FlightRealism>Relaxed</FlightRealism>
+      <WorldRealism>Relaxed</WorldRealism>
+    </SimMission.RealismOverrides>
+  </WorldBase.Flight>
+</SimBase.Document>
