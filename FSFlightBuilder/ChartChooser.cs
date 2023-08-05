@@ -309,6 +309,43 @@ namespace FSFlightBuilder
                 }
             }
 
+            //Sort the charts
+            //Departure AFD, Departure Misc, Departure General, Departure Departure, Departure Arrival, Departure Approach, 
+            var charts = new List<Chart>();
+            var tmpCharts = selectedCharts.Where(c => c.ICAO == _dep).ToList();
+            if (tmpCharts.Count > 0)
+            {
+                var chts = tmpCharts.Where(c => c.ChartType == ChartTypes.AFD);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Miscellaneous);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.General);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Departure);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Arrival);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Approach);
+                charts.AddRange(chts);
+            }
+            //Destination Arrival, Destination Approach, Destination General, Destination AFD, Destination Misc, Destination Departure
+            tmpCharts = selectedCharts.Where(c => c.ICAO == _dest).ToList();
+            if (tmpCharts.Count > 0)
+            {
+                var chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Arrival);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Approach);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.General);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Miscellaneous);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.AFD);
+                charts.AddRange(chts);
+                chts = tmpCharts.Where(c => c.ChartType == ChartTypes.Departure);
+                charts.AddRange(chts);
+            }
+            selectedCharts = charts;
             Close();
         }
     }
